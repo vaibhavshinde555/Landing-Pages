@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>My Profile</h1>
+      <p>Click on the button to change the gview</p>
+
+      <div class="icons">
+        <i class="fa-solid fa-square" onclick="full()"></i>
+        <i class="fa-solid fa-th-large" onclick="twoColumn()"></i>
+        <i class="fa-solid fa-th" onclick="fourColumn()"></i>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="column1">
+        <img src="images/img31.jpg" alt="" />
+        <img src="images/img2.jpg" alt="" />
+        <img src="images/img3.jpg" alt="" />
+        <img src="images/img4.jpg" alt="" />
+        <img src="images/img5.jpg" alt="" />
+        <img src="images/img6.jpg" alt="" />
+        <img src="images/img7.jpg" alt="" />
+        <img src="images/img8.jpg" alt="" />
+        <img src="images/img9.jpg" alt="" />
+        <img src="images/img10.jpg" alt="" />
+      </div>
+
+      <div id="column2">
+        <img src="images/img11.jpg" alt="" />
+        <img src="images/img12.jpg" alt="" />
+        <img src="images/img13.jpg" alt="" />
+        <img src="images/img14.jpg" alt="" />
+        <img src="images/img15.jpg" alt="" />
+        <img src="images/img16.jpg" alt="" />
+        <img src="images/img17.jpg" alt="" />
+        <img src="images/img18.jpg" alt="" />
+        <img src="images/img19.jpg" alt="" />
+        <img src="images/img20.jpg" alt="" />
+      </div>
+
+      <div id="column3">
+        <img src="images/img21.jpg" alt="" />
+        <img src="images/img22.jpg" alt="" />
+        <img src="images/img23.jpg" alt="" />
+        <img src="images/img24.jpg" alt="" />
+        <img src="images/img25.jpg" alt="" />
+        <img src="images/img26.jpg" alt="" />
+        <img src="images/img27.jpg" alt="" />
+        <img src="images/img28.jpg" alt="" />
+        <img src="images/img29.jpg" alt="" />
+        <img src="images/img30.jpg" alt="" />
+      </div>
+
+      <div id="column4">
+        <img src="images/img34.jpg" alt="" />
+        <img src="images/img32.jpg" alt="" />
+        <img src="images/img33.jpg" alt="" />
+        <img src="images/img1.jpg" alt="" />
+        <img src="images/img35.jpg" alt="" />
+        <img src="images/img36.jpg" alt="" />
+        <img src="images/img37.jpg" alt="" />
+        <img src="images/img38.jpg" alt="" />
+        <img src="images/img39.jpg" alt="" />
+        <img src="images/img40.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      function full() {
+        document.getElementById("column1").style.width = "100%";
+        document.getElementById("column2").style.width = "100%";
+        document.getElementById("column3").style.width = "100%";
+        document.getElementById("column4").style.width = "100%";
+      }
+
+      function twoColumn() {
+        document.getElementById("column1").style.width = "50%";
+        document.getElementById("column2").style.width = "50%";
+        document.getElementById("column3").style.width = "50%";
+        document.getElementById("column4").style.width = "50%";
+      }
+
+      function fourColumn() {
+        document.getElementById("column1").style.width = "25%";
+        document.getElementById("column2").style.width = "25%";
+        document.getElementById("column3").style.width = "25%";
+        document.getElementById("column4").style.width = "25%";
+      }
+    </script>
+  </body>
+</html>
